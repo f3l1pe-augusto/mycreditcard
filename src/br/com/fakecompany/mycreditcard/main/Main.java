@@ -1,7 +1,6 @@
 package br.com.fakecompany.mycreditcard.main;
 
-import br.com.fakecompany.mycreditcard.models.CreditCard;
-import br.com.fakecompany.mycreditcard.models.Product;
+import br.com.fakecompany.mycreditcard.models.*;
 
 import java.util.Collections;
 import java.util.LinkedList;
@@ -21,7 +20,13 @@ public class Main {
         System.out.println("***************************************************");
 
         Scanner scanner = new Scanner(System.in);
-        List<String> list = new LinkedList<>();
+        List<Product> list = new LinkedList<>();
+
+        Shoes shoes = new Shoes("Nike Air Jordan", 200, "Nike");
+        Electronics electronics = new Electronics("IPad", 800, "Apple");
+        Clothes clothes = new Clothes("White T-Shirt", 50, "Calvin Klein");
+        Toys toys = new Toys("Barbie", 20, "Mattel");
+        Foods foods = new Foods("X-Burger", 10, "McDonald's");
 
         while (true) {
             System.out.println("\n*************** Shopping Mall ***************");
@@ -37,35 +42,39 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    if (funds >= 90){
-                        list.add("Shoes");
-                        funds -= 90;
+                    shoes.showInfo();
+                    if (funds >= 200){
+                        list.add(shoes);
+                        funds -= 200;
                     }
                     else {
                         System.out.println("Insufficient funds");
                     }
                     break;
                 case 2:
-                    if (funds >= 400){
-                        list.add("Electronics");
-                        funds -= 400;
+                    electronics.showInfo();
+                    if (funds >= 800){
+                        list.add(electronics);
+                        funds -= 800;
                     }
                     else {
                         System.out.println("Insufficient funds");
                     }
                     break;
                 case 3:
-                    if (funds >= 30){
-                        list.add("Clothes");
-                        funds -= 30;
+                    clothes.showInfo();
+                    if (funds >= 50){
+                        list.add(clothes);
+                        funds -= 50;
                     }
                     else {
                         System.out.println("Insufficient funds");
                     }
                     break;
                 case 4:
+                    toys.showInfo();
                     if (funds >= 20){
-                        list.add("Toys");
+                        list.add(toys);
                         funds -= 20;
                     }
                     else {
@@ -73,8 +82,9 @@ public class Main {
                     }
                     break;
                 case 5:
+                    foods.showInfo();
                     if (funds >= 10){
-                        list.add("Foods");
+                        list.add(foods);
                         funds -= 10;
                     }
                     else {
