@@ -2,10 +2,7 @@ package br.com.fakecompany.mycreditcard.main;
 
 import br.com.fakecompany.mycreditcard.models.*;
 
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -110,11 +107,11 @@ public class Main {
             }
         }
 
-        Collections.sort(list);
+        list.sort(Comparator.comparing(Product :: getPrice));
 
         System.out.println("\n***************** Shopping List *****************");
-        for (String shop : list) {
-            System.out.println(shop);
+        for (Product product : list) {
+            System.out.println(product);
         }
         System.out.println("*************************************************");
     }

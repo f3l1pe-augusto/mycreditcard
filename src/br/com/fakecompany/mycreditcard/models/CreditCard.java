@@ -4,7 +4,7 @@ public class CreditCard {
     private final int number;
     private String name;
     private final String bank;
-    private double limit;
+    private final double limit;
 
     public CreditCard(final int number, String bank, double limit) {
         this.number = number;

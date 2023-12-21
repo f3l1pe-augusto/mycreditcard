@@ -1,9 +1,13 @@
 package br.com.fakecompany.mycreditcard.models;
 
 public class Product {
-    private String name;
-    private double price;
-    private String brand;
+    private final String name;
+    private final double price;
+    private final String brand;
+
+    public double getPrice() {
+        return price;
+    }
 
     public Product(String name, int price, String brand) {
         this.name = name;
@@ -12,10 +16,11 @@ public class Product {
     }
 
     public void showInfo() {
-        String info = """
-                Name: %s
-                Price: %.2f
-                Brand: %s
-                """.formatted(name, price, brand);
+        System.out.println("Name: " + name + " Price: US$" + price + " Brand: " + brand);
+    }
+
+    @Override
+    public String toString() {
+        return "Name: " + name + " Price: US$" + price + " Brand: " + brand;
     }
 }
