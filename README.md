@@ -1,6 +1,6 @@
 # MyCreditCard
 
-It's an application built to train Java Collections concepts, like List and Sort. 
+It's an application built to train Java Collections concepts (List and Sort). 
 
 # How does it work?
 
@@ -17,6 +17,8 @@ Here, you can see a list of products to buy on a shopping mall, and then based o
 To conclude, I use here the Java Collections Framework to put all things you bought on a list and then sort it based on their price.
 
 # How to use?
+
+You can see the codes in src folder, to run the program you'll need to have JDK installed in your computer and then just run in your preferred IDE.
 
 # Images
 
