@@ -20,7 +20,7 @@ To conclude, I use here the Java Collections Framework to put all things you bou
 
 # Images
 
-![Preview Code1 Project](https://github.com/f3l1pe-augusto/mycreditcard/blob/main/images/code1ProjectPrint.png?raw=true)
+![Preview Code1 Project](https://github.com/f3l1pe-augusto/mycreditcard/blob/main/images/Code1ProjectPrint.png?raw=true)
 #
 ![Preview Code2 Project](https://github.com/f3l1pe-augusto/mycreditcard/blob/main/images/code2ProjectPrint.png?raw=true)
 #
