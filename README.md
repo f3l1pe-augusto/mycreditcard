@@ -19,3 +19,9 @@ To conclude, I use here the Java Collections Framework to put all things you bou
 # How to use?
 
 # Images
+
+![Preview Code1 Project](https://github.com/f3l1pe-augusto/mycreditcard/blob/main/images/code1ProjectPrint.png?raw=true)
+#
+![Preview Code2 Project](https://github.com/f3l1pe-augusto/mycreditcard/blob/main/images/code2ProjectPrint.png?raw=true)
+#
+![Preview Interface Project](https://github.com/f3l1pe-augusto/mycreditcard/blob/main/images/interfaceProjectPrint.png?raw=true)
