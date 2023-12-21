@@ -16,6 +16,6 @@ Here, you can see a list of products to buy on a shopping mall, and then based o
 
 To conclude, I use here the Java Collections Framework to put all things you bought on a list and then sort it based on their price.
 
-## How to use?
+# How to use?
 
-## Images
+# Images
