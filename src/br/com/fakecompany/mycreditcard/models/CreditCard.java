@@ -20,20 +20,12 @@ public class CreditCard {
         return name;
     }
 
-    public long getNumber() {
-        return number;
-    }
-
-    public String getBank() {
-        return bank;
-    }
-
     public double getLimit() {
         return limit;
     }
 
     @Override
     public String toString() {
-        return "Credit card number: " + this.getNumber() + "\nBank: " + this.getBank() + "\nLimit: " + this.getLimit();
+        return "Credit card number: " + number + "\nBank: " + bank + "\nLimit: " + limit;
     }
 }
