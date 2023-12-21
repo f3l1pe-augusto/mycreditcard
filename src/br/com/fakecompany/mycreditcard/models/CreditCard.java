@@ -6,10 +6,13 @@ public class CreditCard {
     private final String bank;
     private final double limit;
 
+    private double funds;
+
     public CreditCard(final int number, String bank, double limit) {
         this.number = number;
         this.bank = bank;
         this.limit = limit;
+        this.funds = limit;
     }
 
     public void setName(String name) {
@@ -20,8 +23,17 @@ public class CreditCard {
         return name;
     }
 
-    public double getLimit() {
-        return limit;
+    public double getFunds() {
+        return funds;
+    }
+
+    public boolean shop(double price) {
+        if (funds >= price){
+            funds -= price;
+            return true;
+        }
+        System.out.println("Insufficient funds");
+        return false;
     }
 
     @Override

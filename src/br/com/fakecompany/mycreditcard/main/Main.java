@@ -9,8 +9,6 @@ public class Main {
         CreditCard creditCard = new CreditCard(1236985474, "ByteBank", 1000);
         creditCard.setName("Felipe Augusto Ferreira");
 
-        double funds = creditCard.getLimit();
-
         System.out.println("\n*************** ByteBank **************************");
         System.out.println("Name: " + creditCard.getName());
         System.out.println(creditCard);
@@ -40,61 +38,41 @@ public class Main {
             switch (choice) {
                 case 1:
                     shoes.showInfo();
-                    if (funds >= 200){
+                    if (creditCard.shop(200)) {
                         list.add(shoes);
-                        funds -= 200;
-                    }
-                    else {
-                        System.out.println("Insufficient funds");
                     }
                     break;
                 case 2:
                     electronics.showInfo();
-                    if (funds >= 800){
+                    if (creditCard.shop(800)) {
                         list.add(electronics);
-                        funds -= 800;
-                    }
-                    else {
-                        System.out.println("Insufficient funds");
                     }
                     break;
                 case 3:
                     clothes.showInfo();
-                    if (funds >= 50){
+                    if (creditCard.shop(50)) {
                         list.add(clothes);
-                        funds -= 50;
-                    }
-                    else {
-                        System.out.println("Insufficient funds");
                     }
                     break;
                 case 4:
                     toys.showInfo();
-                    if (funds >= 20){
+                    if (creditCard.shop(20)) {
                         list.add(toys);
-                        funds -= 20;
-                    }
-                    else {
-                        System.out.println("Insufficient funds");
                     }
                     break;
                 case 5:
                     foods.showInfo();
-                    if (funds >= 10){
+                    if (creditCard.shop(10)) {
                         list.add(foods);
-                        funds -= 10;
-                    }
-                    else {
-                        System.out.println("Insufficient funds");
                     }
                     break;
                 default:
                     System.out.println("Invalid option!");
                     break;
             }
-            System.out.println("\nCurrent funds: " + funds);
+            System.out.println("\nCurrent funds: " + creditCard.getFunds());
 
-            if (funds == 0) {
+            if (creditCard.getFunds() == 0) {
                 break;
             }
 
